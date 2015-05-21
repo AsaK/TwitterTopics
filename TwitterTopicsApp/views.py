@@ -3,10 +3,11 @@ from requests_oauthlib import OAuth1Session
 import json
 # Create your views here.
 def index(request):
-    api_key = "qpxE7qHeiSJkcXRTqhNBHDbI2"
-    api_secret = "AeQgzfkUqq75BsO7dmKdWPDGs2ceU5K3BPEBJ56hFdRlejXpce"
-    access_token = "141286017-jBBeyNC5sDJscdBfKqoBsF4y6ctzvDWuzRSnsA1z"
-    access_token_secret = "CuLpSmgT6EmBz3lXwkIqs6OnLfsMMzlEp8dSbna284PF6"
+	#PUT YOU APP TWITER KEYS HERE
+    api_key = ""
+    api_secret = ""
+    access_token = ""
+    access_token_secret = ""
     session = OAuth1Session(api_key, api_secret, access_token, access_token_secret)
     response = session.get("https://api.twitter.com/1.1/trends/place.json?id=1")
     worlds = json.loads(response.content)[0]["trends"]
