@@ -88,7 +88,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'pt-BR'
 
-TIME_ZONE = 'UTC-03:00'
+TIME_ZONE = 'America/Recife'
 
 USE_I18N = True
 
