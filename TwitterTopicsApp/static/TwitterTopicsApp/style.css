@@ -1,0 +1,13 @@
+body {
+	text-align : center;
+	alignment : center;
+	background-color : #2ECCFA;
+}
+#trendings {
+	position : absolute;
+	top : 28%;
+	left : 30%;
+}       
+ul {
+	list-style-type : none;
+}

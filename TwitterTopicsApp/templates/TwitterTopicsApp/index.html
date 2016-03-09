@@ -1,66 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head lang="pt-br">
+<head lang="pt-br">	
     <meta charset="UTF-8">
-    <title>Twitter Trending Topics APP</title>
-    <style>
-        body {
-            text-align : center;
-            alignment : center;
-            background-color : #2ECCFA;
-        }
-        #trendings {
-            position : absolute;
-            color : #000000;
-            text-shadow : 2px 2px 2px #fffbb5;
-            top : 28%;
-            left : 30%;
-            font-family: Helvetica, Arial, sans-serif;
-        }
-        #tt1 {
-            font-size: 70px;
-        }
-        #tt2 {
-            font-size: 65px;
-        }
-        #tt3 {
-            font-size: 60px;
-        }
-        #tt4 {
-            font-size: 55px;
-        }
-        #tt5 {
-            font-size: 50px;
-        }
-        #tt6 {
-            font-size: 45px;
-        }
-        #tt7 {
-            font-size: 40px;
-        }
-        #tt8 {
-            font-size: 35px;
-        }
-        #tt9 {
-            font-size: 30px;
-        }
-        #tt10 {
-            font-size: 25px;
-        }
-        #title {
-            font-size: 30px;
-        }
-        ul {
-            list-style-type : none;
-        }
-    </style>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	{% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'TwitterTopicsApp/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'TwitterTopicsApp/style.css' %}">	
+    <title>CloudTT - APP</title>	
 </head>
 <body>
-    <h1>Twitter Trending Topics APP</h1>
-    <img src="http://www.connectuse.com.br/imagens/produto/nuvem.png"/>
+    <h1>CloudTT - Matters of the Moment</h1>
+    <img src="{% static 'TwitterTopicsApp/nuvem.png' %}"/>
     <div id="trendings">
         <ul>
-            <li id="title"> Most commented World Topics</li>
+            <li id="title"> WorldWide TT Cloud</li>
             <li id="tt1"> {{ tt1 }} </li>
             <li id="tt2"> {{ tt2 }} </li>
             <li id="tt3"> {{ tt3 }} </li>
