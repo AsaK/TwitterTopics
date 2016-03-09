@@ -23,5 +23,4 @@ def index(request):
                'tt10': worlds[9]["name"],
                }
 
-    print "Status da consulta " + str(response.status_code)
     return render(request, 'TwitterTopicsApp/index.html', context)
